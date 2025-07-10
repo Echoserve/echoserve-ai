@@ -24,6 +24,10 @@ type Ticket = {
   createdAt: string
   status: 'open' | 'closed'
   tags?: string[]
+  assignedAgentName?: string
+  assigned_to_name?: string
+  assigned_to?: string
+  updated_at?: string
 }
 
 export default function AnalyticsPage() {
