@@ -1,7 +1,8 @@
 'use client'
+import React from 'react'
 import { useEffect, useState } from 'react'
-import { supabase } from '@/lib/supabaseClient'
-import { Button } from '@/components/ui/button'
+import { supabase } from '../lib/supabaseClient'
+import { Button } from '../../../customer-widget/src/components/ui/Button'
 import { useRouter } from 'next/navigation'
 
 export default function Header() {
