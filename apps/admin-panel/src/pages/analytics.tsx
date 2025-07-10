@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react'
-import { supabase } from '@/lib/supabaseClient'
-import { Card } from '@/components/ui/card'
-import Header from '@/components/Header'
-import NavBar from '@/components/NavBar'
+import { supabase } from '../lib/supabaseClient'
+import { Card } from '../../../customer-widget/src/components/ui/Card'
+import Header from '../components/Header'
+import NavBar from '../components/NavBar'
 import {
   PieChart,
   Pie,
