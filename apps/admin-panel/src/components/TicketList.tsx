@@ -175,7 +175,7 @@ export const TicketList: React.FC = () => {
             <button
               key={agent}
               className={`px-3 py-1 rounded font-semibold ${selectedAgent === agent ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-800'}`}
-              onClick={() => setSelectedAgent(agent)}
+              onClick={() => setSelectedAgent(agent ?? null)}
             >
               {agent}
             </button>
