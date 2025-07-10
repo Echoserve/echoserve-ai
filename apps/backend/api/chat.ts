@@ -10,7 +10,7 @@ export default async function handler(req: Request) {
   try {
     const body = await req.json();
     const messages = body.messages;
-    const aiReply = await generateAIResponse(messages);
+    const aiReply = await generateAIResponse(messages, '', '', '');
     return new Response(
       JSON.stringify({ reply: aiReply }),
       { headers: { "Content-Type": "application/json" } }
