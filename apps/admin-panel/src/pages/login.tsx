@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabaseClient'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
+import { supabase } from '../lib/supabaseClient'
+import { Input } from '../../../customer-widget/src/components/ui/Input'
+import { Button } from '../../../customer-widget/src/components/ui/Button'
+import { Card } from '../../../customer-widget/src/components/ui/Card'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')

@@ -40,7 +40,7 @@ const ROLE_META = {
   },
 };
 
-export const TicketList: React.FC = () => {
+const TicketList: React.FC<any> = (props) => {
   const [tickets, setTickets] = useState<Ticket[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -318,4 +318,5 @@ export const TicketList: React.FC = () => {
   );
 };
 
+export { TicketList };
 export default TicketList;
